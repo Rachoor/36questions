@@ -1,13 +1,46 @@
+* { 
+	margin : 0; 
+	padding : 0; 
+}
+
 body {
-	background : #7F0000;
+	font-family : 'Open Sans';
 	font-family : 'GothamRoundedLight';
-	font-size : 18px;
+	font-size : 24px;
+	text-align : center;
 	color: #FFD6D8;
 }
 
 section {
 	width : 100%;
-		margin : 0px !important;
+	overflow : auto;
+}
+
+h1, h2, h3, h4 {
+	
+}
+
+h1 {
+	font-size : 68px !important;
+
+}
+
+h2 {
+	margin : 40px auto;
+	font-size : 48px;
+}
+
+h3 {
+	margin : 20px auto;
+	font-size : 32px;
+}
+
+h4 {
+	
+}
+
+table {
+	table-layout : fixed;
 }
 
 input {
@@ -17,24 +50,24 @@ input {
 
 ul, ol {
 	list-style-type : none;
-	margin : 0px !important;
-	padding : 0px !important;
 }
 
 p {
-	
+	margin : 20px auto;
+	width : 720px;
 }
 
 .content {
-	margin : auto;
+	margin : 80px auto;
+	width : 1000px !important;
 }
 
-#landing, #info, #join {
-	height : 100vh;
+#landing, #info, #join, #faq {
+	min-height : 100vh;
 }
 
 #landing, #join, #contact {
-
+	background : #7F0000;
 }
 
 #info, #faq {
@@ -42,13 +75,11 @@ p {
 }
 
 #landing {
-	min-height : 440px;
 	text-align : center;
 	display : table;
 }
 
 #landing .content {
-	width : 100%;
 	display : table-cell;
 	vertical-align : middle;
 }
@@ -61,25 +92,66 @@ p {
 
 }
 
+#events {
+	
+}
+
+#events div {
+	width : 200px;
+	height : 200px;
+	display : inline-block;
+	line-height : 200px;
+}
+
+#events div:hover {
+	-webkit-transform : scale(1.03);
+	-moz-transform : scale(1.03);
+	-o-transform : scale(1.03);
+	transform : scale(1.03);
+	transition : all 0.3s;
+	-webkit-transition : all 0.3s;
+}
+
+#events #sf {
+	background : url("../img/sf.jpg") no-repeat center;
+}
+
+#events #aa {
+	background : url("../img/sf.jpg") no-repeat center;
+}
+
+#events #la {
+	background : url("../img/sf.jpg") no-repeat center;
+}
+
+#events #mi {
+	background : url("../img/sf.jpg") no-repeat center;
+}
+
+#events #ny {
+	background : url("../img/sf.jpg") no-repeat center;
+}
+
+#events #bo {
+	background : url("../img/sf.jpg") no-repeat center;
+}
+
+#events #ch {
+	background : url("../img/sf.jpg") no-repeat center;
+}
+
+#events #po {
+	background : url("../img/sf.jpg") no-repeat center;
+}
+
+
 #faq {
-	min-height : 100vh;
+	
 }
 
 #contact {
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -109,11 +181,6 @@ p {
 input[type="submit"] {
 	width : 800px;
 	margin : 0px 0px 40px 0px;
-}
-
-#landing form {
-	width : 320px;
-	color : #474747 !important;
 }
 
 #landing input[type="text"] {
@@ -148,7 +215,6 @@ input[type="submit"] {
 	color : #F9F9F2;
 }
 
-
 #landing button:focus, #landing button:active, #landing button.active, #landing button:focus:active {
 	background-image : none;
 	outline : none;
@@ -162,14 +228,3 @@ input[type="submit"] {
 
 
 
-
-
-
-#map-image {
-	background : url("../img/haus.jpg");
-	background-size : cover;
-	background-position : 50% 22%;
-	width : 540px;
-	height : 400px;
-	float : left;
-}
