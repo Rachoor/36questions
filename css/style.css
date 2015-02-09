@@ -4,11 +4,10 @@
 }
 
 body {
-	font-family : 'Open Sans';
-	font-family : 'GothamRoundedLight';
+	font-family: 'Lato', sans-serif;
 	font-size : 24px;
 	text-align : center;
-	color: #FFD6D8;
+	color: #FFFFFF;
 }
 
 section {
@@ -21,7 +20,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	font-size : 68px !important;
+	font-size : 100px !important;
+	font-style: bold;
 
 }
 
@@ -62,16 +62,26 @@ p {
 	width : 1000px !important;
 }
 
+#landing {
+	background-image: url("../img/landing3.gif");
+	background-size: cover;
+}
+
 #landing, #info, #join, #faq {
 	min-height : 100vh;
 }
 
-#landing, #join, #contact {
-	background : #7F0000;
+#contact {
+	background : #CE7DA5;
+}
+
+#join {
+
+	background : #DFF3E3;
 }
 
 #info, #faq {
-	background : #FF4C4C;
+	background : #BEE5BF;
 }
 
 #landing {
@@ -97,10 +107,12 @@ p {
 }
 
 #events div {
-	width : 200px;
-	height : 200px;
+	width : 300px;
+	height : 400px;
 	display : inline-block;
 	line-height : 200px;
+	margin: 10px;
+	background-size: cover !important;
 }
 
 #events div:hover {
@@ -117,31 +129,27 @@ p {
 }
 
 #events #aa {
-	background : url("../img/sf.jpg") no-repeat center;
+	background : url("../img/aa.jpg") no-repeat center;
 }
 
 #events #la {
-	background : url("../img/sf.jpg") no-repeat center;
-}
-
-#events #mi {
-	background : url("../img/sf.jpg") no-repeat center;
+	background : url("../img/la.jpg") no-repeat center;
 }
 
 #events #ny {
-	background : url("../img/sf.jpg") no-repeat center;
+	background : url("../img/nyc.jpg") no-repeat center;
 }
 
 #events #bo {
-	background : url("../img/sf.jpg") no-repeat center;
+	background : url("../img/bos.jpg") no-repeat center;
 }
 
 #events #ch {
-	background : url("../img/sf.jpg") no-repeat center;
+	background : url("../img/chi.jpg") no-repeat center;
 }
 
 #events #po {
-	background : url("../img/sf.jpg") no-repeat center;
+	background : url("../img/po.jpg") no-repeat center;
 }
 
 
