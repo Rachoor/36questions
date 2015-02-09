@@ -74,12 +74,13 @@ p {
 }
 
 #join {
-
+	background-color : #E26A6A;
 	background-image : url("../img/mooning.png");
 }
 
 #info, #faq {
-	background : #E6B3BA;
+	background-color: #e26a6a;
+	background-image: url(http://www.transparenttextures.com/patterns/45-degree-fabric-light.png);
 }
 
 #landing {
