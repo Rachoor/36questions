@@ -4,7 +4,7 @@
 }
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size : 24px;
 	text-align : center;
 	color: #FFFFFF;
@@ -21,8 +21,6 @@ h1, h2, h3, h4 {
 
 h1 {
 	font-size : 100px !important;
-	font-style: bold;
-
 }
 
 h2 {
@@ -77,11 +75,11 @@ p {
 
 #join {
 
-	background : #DFF3E3;
+	background-image : url("../img/mooning.png");
 }
 
 #info, #faq {
-	background : #BEE5BF;
+	background : #E6B3BA;
 }
 
 #landing {
@@ -169,16 +167,15 @@ p {
 
 
 #landing button, input[type="submit"] {
-	font-family : 'canterlight'; 
-	font-size : 36px !important;
+	font-family : 'Open Sans', sans-serif; 
+	font-size : 20px !important;
 	text-transform: uppercase;
 	background : transparent;
-	color : #F59043;	
+	color : #FFFFFF;	
 	width : 320px;
-	height : 48px;
+	height : 50px;
 	margin : 36px auto 0px auto;
-	border : 2px solid #F59043;
-	border-radius : 5px;
+	border : 2px solid #FFFFFF;
 	transition : color 0.50s, background 500ms;
 	-webkit-transition : color 0.50s, background 500ms;
 	-moz-transition : color 0.50s, background 500ms;
@@ -203,24 +200,24 @@ input[type="submit"] {
 }
 
 ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
-	font-family : 'canterlight' !important; 
-	color : #474747;
+	font-family : 'Open Sans', sans-serif !important; 
+	color : #FFFFFF;
 }
 
 #landing input[type="submit"] {
-	background : #F9F9F2 url("../img/arrow_orange.png") no-repeat center 10px;
+	background : #FFFFFF;
 	width : 56px !important;
 	margin : -52px 0px 0px 270px;
 	position : absolute;
 }
 
 #landing input[type="submit"]:hover {
-	background : #F59043 url("../img/arrow_cream.png") no-repeat center 10px;
+	background : #FFFFFF url("../img/arrow_cream.png") no-repeat center 10px;
 }
 
 #landing button:hover, input[type="submit"]:hover {
-	background : #F59043;
-	color : #F9F9F2;
+	background : #FFFFFF;
+	color : black;
 }
 
 #landing button:focus, #landing button:active, #landing button.active, #landing button:focus:active {
