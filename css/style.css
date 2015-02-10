@@ -128,8 +128,7 @@ a {
 }
 
 #events {
-	
-	border-radius : 5px;
+
 }
 
 #events #sf {
@@ -158,6 +157,11 @@ a {
 
 #events #po {
 	background : url("../img/po.jpg") no-repeat center;
+}
+
+#events #nh {
+
+	background : url("../img/nh.jpg") no-repeat center;
 }
 
 .location {
