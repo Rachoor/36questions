@@ -4,7 +4,7 @@
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans';
 	font-size : 24px;
 	text-align : center;
 	color: #FFFFFF;
@@ -20,8 +20,10 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	font-size : 100px !important;
+	font-size : 120px !important;
 	text-shadow: 0px 0px 2px #DEB3B3;
+	letter-spacing: 7px;
+	font-weight: 700;
 }
 
 h2 {
@@ -81,8 +83,6 @@ p {
 
 #info, #faq {
 	background-color: #e26a6a;
-/*background-image: url(http://www.transparenttextures.com/patterns/brilliant.png);*/
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */ight.png);
 }
 
 #landing {
