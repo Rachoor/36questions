@@ -66,6 +66,10 @@ input {
 	vertical-align : middle;
 }
 
+button, input, .location {
+	border-radius : 3px;
+}
+
 button:focus, button:active, button.active, button:focus:active {
 	background-image : none;
 	outline : none;
