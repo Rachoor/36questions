@@ -56,14 +56,19 @@ p {
 	width : 720px;
 }
 
+a {
+	color : #FFFFFF;
+    text-decoration : none;
+}
+
 .content {
 	margin : 80px auto;
 	width : 1000px !important;
 }
 
 #landing {
-	background-image: url("../img/landing8.jpg");
-	background-size: cover;
+	background-image : url("../img/landing8.jpg");
+	background-size : cover;
 }
 
 #landing, #info, #join, #faq {
@@ -80,7 +85,7 @@ p {
 }
 
 #info, #faq {
-	background-color: #e26a6a;
+	background-color : #e26a6a;
 /*background-image: url(http://www.transparenttextures.com/patterns/brilliant.png);*/
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
@@ -105,24 +110,6 @@ p {
 
 #events {
 	
-}
-
-#events div {
-	width : 300px;
-	height : 400px;
-	display : inline-block;
-	line-height : 200px;
-	margin : 10px;
-	background-size: cover !important;
-}
-
-#events div:hover {
-	-webkit-transform : scale(1.03);
-	-moz-transform : scale(1.03);
-	-o-transform : scale(1.03);
-	transform : scale(1.03);
-	transition : all 0.3s;
-	-webkit-transition : all 0.3s;
 }
 
 #events #sf {
@@ -151,6 +138,42 @@ p {
 
 #events #po {
 	background : url("../img/po.jpg") no-repeat center;
+}
+
+.location {
+	margin : 10px;
+	width : 300px;
+	height : 400px;
+	display : inline-block;
+	background-size : cover !important;
+	vertical-align : top;
+}
+
+.location:hover {
+	/*-webkit-transform : scale(1.03);
+	-moz-transform : scale(1.03);
+	-o-transform : scale(1.03);
+	transform : scale(1.03);
+	transition : all 0.3s;
+	-webkit-transition : all 0.3s;*/
+}
+
+.location:hover .dates h4 {
+	/*display : block;
+	transition : all 3.3s;
+	-webkit-transition : all 3.3s;
+	animation-duration : 3s;*/
+}
+
+.details {
+    position : relative;
+  	top : 50%;
+  	transform : translateY(-50%);
+}
+
+.dates {
+	font-size : 48px;
+	display : none;
 }
 
 #host {
