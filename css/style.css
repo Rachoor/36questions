@@ -4,10 +4,13 @@
 }
 
 body {
-	font-family: 'Open Sans';
+	font-family: 'Roboto Slab';
+	font-weight: 100;
 	font-size : 24px;
 	text-align : center;
+	color: #FFDFCE;
 	color: #FFFFFF;
+	/*color: #FFF6F2;*/
 }
 
 section {
@@ -16,6 +19,8 @@ section {
 }
 
 h1, h2, h3, h4 {
+
+	font-family: 'Open Sans';
 	
 }
 
@@ -29,15 +34,21 @@ h1 {
 h2 {
 	margin : 40px auto;
 	font-size : 48px;
+	color: #FFFFFF;
+	text-align: left;
+	font-weight: 400;
 }
 
 h3 {
 	margin : 20px auto;
 	font-size : 32px;
+	color: #FFFFFF;
+	font-weight: 400;
 }
 
 h4 {
-	
+	font-family: 'Roboto Slab';
+	font-weight: 100;
 }
 
 table {
@@ -65,12 +76,12 @@ a {
 
 .content {
 	margin : 80px auto;
-	width : 1000px !important;
+	width : 1000px;
 }
 
 #landing {
-	background-image : url("../img/landing8.jpg");
-	background-size : cover;
+	background-color: #e26a6a;
+	background-image: url(http://www.transparenttextures.com/patterns/arches.png);
 }
 
 #landing, #info, #join, #faq {
@@ -82,12 +93,20 @@ a {
 }
 
 #join {
-	background-color : #E26A6A;
-	background-image : url("../img/mooning.png");
+	background-color : #FFF6F2;
+	background-color : #FFDFCE;
+	background-color : #FFFFFF;
 }
 
 #info, #faq {
-	background-color: #e26a6a;
+	background-color: #353F44;
+	/*background-color: #c53353;
+	background-color: #73132a;*/
+}
+
+#info .content, #faq .content {
+	width : 720px;
+	text-align: left;
 }
 
 #landing {
@@ -110,6 +129,7 @@ a {
 
 #events {
 	
+	border-radius : 5px;
 }
 
 #events #sf {
@@ -173,6 +193,7 @@ a {
 
 .dates {
 	font-size : 48px;
+	font-family : 'Roboto';
 	display : none;
 }
 
