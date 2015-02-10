@@ -200,12 +200,12 @@ input[type="text"] {
 	color : #FFFFFF;
 	border : 2px solid #FFFFFF;
 /*	border-radius : 5px;	*/
-	outline : none;
 	text-align : center;
 }
 
-input[type="text"], input[type="submit"] {
+button, input[type="text"], input[type="submit"] {
 	display : block;
+	outline : none;
 }
 
 ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
