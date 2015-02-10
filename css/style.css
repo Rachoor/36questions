@@ -4,10 +4,13 @@
 }
 
 body {
-	font-family: 'Open Sans';
+	font-family: 'Roboto Slab';
+	font-weight: 100;
 	font-size : 24px;
 	text-align : center;
+	color: #FFDFCE;
 	color: #FFFFFF;
+	/*color: #FFF6F2;*/
 }
 
 section {
@@ -16,6 +19,8 @@ section {
 }
 
 h1, h2, h3, h4 {
+
+	font-family: 'Open Sans';
 	
 }
 
@@ -29,15 +34,21 @@ h1 {
 h2 {
 	margin : 40px auto;
 	font-size : 48px;
+	color: #FFFFFF;
+	text-align: left;
+	font-weight: 400;
 }
 
 h3 {
 	margin : 20px auto;
 	font-size : 32px;
+	color: #FFFFFF;
+	font-weight: 400;
 }
 
 h4 {
-	
+	font-family: 'Roboto Slab';
+	font-weight: 100;
 }
 
 form {
@@ -53,6 +64,14 @@ table {
 input {
 	height : 48px;
 	vertical-align : middle;
+}
+
+button:focus, button:active, button.active, button:focus:active {
+	background-image : none;
+	outline : none;
+	box-shadow : none;  
+	-webkit-box-shadow : none;
+	-moz-box-shadow : none;
 }
 
 ul, ol {
@@ -71,12 +90,18 @@ a {
 
 .content {
 	margin : 80px auto;
-	width : 1000px !important;
+	width : 1000px;
+	clear : none;
+}
+
+#info .content, #faq .content {
+	width : 720px;
+	text-align: left;
 }
 
 #landing {
-	background-color : #e26a6a;
-	background-size : cover;	
+	background-color: #e26a6a;
+	background-image: url(http://www.transparenttextures.com/patterns/arches.png);
 }
 
 #landing, #info, #join, #faq {
@@ -102,12 +127,13 @@ a {
 	background-color : #FFFFFF;
 }
 
-#faq {
-	background-color : #e26a6a;
+#join h2 {
+	text-align : center;
 }
 
-#contact {
-	background : #4f0b18;
+#join h2, #host h3, #host h4 {
+	font-weight : normal;
+	color : #434B59;
 }
 
 #events #sf {
@@ -155,19 +181,31 @@ a {
 
 .dates {
 	font-size : 48px;
+	font-family : 'Roboto';
 	display : none;
 }
 
 #host {
+	margin : 80px;
+	padding-bottom : 80px;
 	text-align : center;
 }
 
+#host h4 {
+	font-family : 'Open Sans', sans-serif; 
+}
+
+#host h3, #host h4, #contact h3, #contact h4 {
+	margin : 0px;
+}
+
 #faq {
-	
+	background-color : #e26a6a;
 }
 
 #contact {
-	padding-bottom : 20px;
+	background : #4f0b18;
+	padding : 40px 0px;	
 }
 
 #contact h3 {
@@ -234,37 +272,13 @@ input[type="text"] {
 	color : #e26a6a;
 }
 
-#join h2, #host h3, #host h4 {
-	font-weight : normal;
-	color : #434B59;
-}
 
-#host {
-	margin : 80px;
-}
-
-#contact {
-	padding : 40px 0px;
-}
-
-#host h3, #host h4, #contact h3, #contact h4 {
-	margin : 0px;
-}
 
 ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
 	font-family : 'Open Sans', sans-serif !important; 
 	color : #FFFFFF;
 }
 
-
-
-#landing button:focus, #landing button:active, #landing button.active, #landing button:focus:active {
-	background-image : none;
-	outline : none;
-	box-shadow : none;  
-	-webkit-box-shadow : none;
-	-moz-box-shadow : none;
-}
 
 
 
