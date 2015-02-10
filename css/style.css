@@ -21,6 +21,7 @@ h1, h2, h3, h4 {
 
 h1 {
 	font-size : 100px !important;
+	text-shadow: 0px 0px 2px #DEB3B3;
 }
 
 h2 {
@@ -61,8 +62,8 @@ p {
 }
 
 #landing {
-	background-image : url("../img/landing3.gif");
-	background-size : cover;
+	background-image: url("../img/landing8.jpg");
+	background-size: cover;
 }
 
 #landing, #info, #join, #faq {
@@ -79,8 +80,9 @@ p {
 }
 
 #info, #faq {
-	background-color : #e26a6a;
-	background-image : url(http://www.transparenttextures.com/patterns/45-degree-fabric-light.png);
+	background-color: #e26a6a;
+/*background-image: url(http://www.transparenttextures.com/patterns/brilliant.png);*/
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 
 #landing {
