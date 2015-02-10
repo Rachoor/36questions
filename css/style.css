@@ -164,6 +164,11 @@ a {
 	background : url("../img/po.jpg") no-repeat center;
 }
 
+#events #nh {
+
+	background : url("../img/nh.jpg") no-repeat center;
+}
+
 .location {
 	margin : 10px;
 	width : 300px;
