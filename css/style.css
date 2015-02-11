@@ -8,7 +8,6 @@ body {
 	font-weight: 100;
 	font-size : 24px;
 	text-align : center;
-	color: #FFDFCE;
 	color: #FFFFFF;
 	/*color: #FFF6F2;*/
 }
@@ -19,9 +18,7 @@ section {
 }
 
 h1, h2, h3, h4 {
-
 	font-family: 'Open Sans';
-	
 }
 
 h1 {
@@ -98,14 +95,18 @@ a {
 	clear : none;
 }
 
+#join .content {
+	margin-bottom : 40px;
+}
+
 #info .content, #faq .content {
 	width : 720px;
-	text-align: left;
+	text-align : left;
 }
 
 #landing {
-	background-color: #e26a6a;
-	background-image: url(http://www.transparenttextures.com/patterns/arches.png);
+	background-color : #e26a6a;
+	background-image : url(http://www.transparenttextures.com/patterns/arches.png);
 }
 
 #landing, #info, #join, #faq {
@@ -135,7 +136,7 @@ a {
 	text-align : center;
 }
 
-#join h2, #host h3, #host h4 {
+#join h2, #host h3, #host h4, #thanks {
 	font-weight : normal;
 	color : #434B59;
 }
@@ -194,13 +195,24 @@ a {
 	display : none;
 }
 
+.dates h4 {
+	transition : font-size 500ms;
+	-webkit-transition : font-size 500ms;
+	-moz-transition : font-size 500ms;
+	-o-transition : font-size 500ms;
+	-ms-transition : font-size 500ms;
+}
+
+.dates h4:hover {
+	font-size : 52px;
+}
+
 #host {
-	margin : 80px;
-	padding-bottom : 80px;
+	margin : 80px 0 40px 0;
 	text-align : center;
 }
 
-#host h4 {
+#join h4 {
 	font-family : 'Open Sans', sans-serif; 
 }
 
@@ -208,12 +220,18 @@ a {
 	margin : 0px;
 }
 
+#thanks {
+	font-size : 18px;
+	margin-top : 100px;
+	opacity : 0;
+}
+
 #faq {
 	background-color : #e26a6a;
 }
 
 #contact {
-	background : #4f0b18;
+	background : #434B59;
 	padding : 40px 0px;	
 }
 
@@ -225,8 +243,15 @@ a {
 	font-size : 18px;
 }
 
+#landing button {
+	border : 2px solid #FFFFFF;
+	color : #FFFFFF;
+}
 
-
+#landing button:hover {
+	background : #FFFFFF;
+	color : #e26a6a;
+}
 
 button, input[type="submit"] {
 	font-family : 'Open Sans', sans-serif; 
@@ -266,26 +291,15 @@ input[type="submit"]:hover {
 input[type="text"] {
 	width : 320px;
 	height : 38px;
-/*	border-radius : 3px;	*/
 	text-align : center;
 	float : left;
 }
 
-#landing button {
-	border : 2px solid #FFFFFF;
-	color : #FFFFFF;
-}
-
-#landing button:hover {
-	background : #FFFFFF;
-	color : #e26a6a;
-}
-
-
-
-::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+form input::-webkit-input-placeholder, form input:-moz-placeholder, form input::-moz-placeholder, form input:-ms-input-placeholder {
 	font-family : 'Open Sans', sans-serif !important; 
-	color : #FFFFFF;
+	font-size : 12px;
+	color : #434B59;
+	opacity : 50%;	
 }
 
 
