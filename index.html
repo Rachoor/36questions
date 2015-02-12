@@ -59,27 +59,7 @@
             });
         });
     </script>
-    <!--<script>
-        $("#ss-form").submit(function(e) {
-            var postData = $(this).serializeArray();
-            var formURL = $(this).attr("action");
-            $.ajax({
-                url : formURL,
-                type: "POST",
-                data : postData,
-                success:function(data, textStatus, jqXHR) {},
-                error: function(jqXHR, textStatus, errorThrown) {}
-            });
-            e.preventDefault(); 
-            e.unbind(); 
-        });
-        $("#ss-form").submit(); //Submit  the FORM
-    </script>-->
     <script type="text/javascript">
-        /*function validateEmail(email) {
-            var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(email);
-        }*/
         var $j = jQuery.noConflict();
         function postContactToGoogle(){
             var email = $j('#entry_423692582').val();
@@ -92,17 +72,18 @@
                     statusCode: {
                         0: function (){
                             $j('#entry_423692582').val("");
-                            //Success message
+                            $j("#thanks").fadeTo(1000, 1);
+                            $j("#thanks").fadeTo(2000, 0);
                         },
                         200: function (){
                             $j('#entry_423692582').val("");
-                            //Success Message
+                            $j("#thanks").fadeTo(1000, 1);
+                            $j("#thanks").fadeTo(2000, 0);
                         }
                     }
                 });
             }
             else {
-                //Error message
             }
         }
     </script>
@@ -209,8 +190,8 @@
                 <!--<form action="https://docs.google.com/forms/d/1UIRaBjkbLiAKA0r3VmAQaVnlwANGnG6ELlEgGE8N-dc/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">-->
                 <input type="text" name="entry.423692582" placeholder="Email" class="ss-q-short" id="entry_423692582" dir="auto" aria-label="  " title="">
                 <input type="submit" name="submit" value="" id="ss-submit" class="jfk-button jfk-button-action "></form>
+                <p id="thanks">Thanks!</p>
             </div>
-
         </div>
     </section>
     <section id="faq">
