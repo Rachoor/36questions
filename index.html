@@ -18,18 +18,16 @@
     <title>36 Questions</title>
 
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/font.css" type="text/css" />    
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
 
-    <link rel="stylesheet" href="css/font.css" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300,100' rel='stylesheet' type='text/css'>
 
-    <!--<link rel="stylesheet" href="css/font.css" type="text/css" />-->
-    
-    <link rel="shortcut icon" href="img/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/png" />
 
     <script src="js/jquery-1.11.2.min.js" type="text/javascript" ></script>
     <script type="text/javascript">
@@ -41,11 +39,19 @@
     <script type="text/javascript">
         jQuery(document).ready(function (){
             jQuery("#apply").click(function (){
-                //$(this).animate(function(){
                     jQuery('html, body').animate({
                         scrollTop: jQuery("#join").offset().top + 2
                     }, 800);
-                //});
+            });
+            jQuery("#list").click(function (){
+                    jQuery('html, body').animate({
+                        scrollTop: jQuery("#join").offset().top + 2
+                    }, 800);
+            });
+            jQuery("#email").click(function (){
+                    jQuery('html, body').animate({
+                        scrollTop: jQuery("#host").offset().top - 80
+                    }, 800);
             });
         });
     </script>
@@ -104,11 +110,7 @@
     <section id="info">        
         <div class="content">
             <h2>What is 36 Questions?</h2>
-            <p>What did you do with the last 45 minutes of your life? It's easy to let time slide by or spend it in ways that don't contribute to our overall happiness.</p>
-            <p>What if there was a way to spend 45 minutes and gain a life long connection, friend or even a lover?</p>
-            <p>Research has shown that intimacy a virtual stranger can be developed in a series of escalating personal questions.</p>
-            <p>Join us for a memorable evening where we'll match you with someone we think you'll like and you'll get to spend 45 minutes developing connection.</p> 
-            <p>It may seem a little crazy, and definitely requires a risk for you to be vulnerable, but all good (great!) things require some risk, right?</p>
+            <p>36 Questions is a social event designed to create intimacy between people, based on a scientific study referenced in a recent <a href="http://www.nytimes.com/2015/01/11/fashion/no-37-big-wedding-or-small.html">New York Times article</a>. Attendees are paired to ask each other a series of 36 increasingly personal questions, with the purpose of connecting deeply.</p>
         </div>
     </section>
     <section id="join">
@@ -196,21 +198,22 @@
     </section>
     <section id="faq">
         <div class="content">
-            <h2>FAQ</h2>
-            <h3>BLah blah I have a questions?</h3>
-                <h4>Lorem ipsum dolem blha blahb I do not like green eggs and ham.</h4>
-            <h3>Do you know who my father is?</h3>
-                <h4>Ask me no questions I'll tell you no lies. Ask me no questions I'll tell you no lies. Ask me no questions I'll tell you no lies. Ask me no questions I'll tell you no lies. </h4>
-            <h3>BLah blah I have a questions?</h3>
-                <h4>Lorem ipsum dolem blha blahb I do not like green eggs and ham.</h4>
-            <h3>Do you know who my father is?</h3>
-                <h4>Ask me no questions I'll tell you no lies. Ask me no questions I'll tell you no lies. Ask me no questions I'll tell you no lies.</h4>
+            <h2>Frequently Asked Questions</h2>
+            <h3>How do I attend 36 Questions?</h3>
+                <h4>Check out <span id="list">this list</span> to see if there is an event near you.</h4>
+            <h3>How is the event structured?</h3>
+                <h4>The event is two hours long. During the first half-hour, attendees will arrive, mingle, and be paired up. For the next hour, pairs will alternate asking each other the 36 questions. Afterwards, everyone will take a few minutes to silently stare into each other’s eyes, then the event will conclude with more mingling.</h4>
+            <h3>Can I come with a partner already?</h3>
+                <h4>Yes. Feel free to come with a friend, partner, family member, anybody!</h4>
+            <h3>How do I organize a 36 Questions event?</h3>
+                <h4>Submit <span id="email">your email</span> and we’ll send you the toolkit.</h4>
         </div>
     </section>
     <section id="contact">
         <div class="">
             <h3>Questions?</h3>
             <h4>Contact <a href="mailto:info@thirtysixquestions.com">info@thirtysixquestions.com</a></h4>
+            <p>Made with <span>&#10084;</span> by <a href="http://randasakallah.com">Randa</a> and <a href="http://natasjanielsen.com">Natasja</a></p>
         </div>
     </section>
 </body>

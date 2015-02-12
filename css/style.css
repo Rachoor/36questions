@@ -4,12 +4,11 @@
 }
 
 body {
-	font-family: 'Roboto Slab';
-	font-weight: 100;
-	font-size : 24px;
+	font-family : 'Roboto Slab';
+	font-weight : 100;
+	font-size : 20px;
 	text-align : center;
-	color: #FFFFFF;
-	/*color: #FFF6F2;*/
+	color : #FFFFFF;
 }
 
 section {
@@ -18,22 +17,21 @@ section {
 }
 
 h1, h2, h3, h4 {
-	font-family: 'Open Sans';
+	font-family : 'Open Sans';
 }
 
 h1 {
 	font-size : 120px !important;
-	text-shadow: 0px 0px 2px #DEB3B3;
-	letter-spacing: 7px;
-	font-weight: 700;
+	text-shadow : 0px 0px 2px #DEB3B3;
+	letter-spacing : 4px;
+	font-weight : 700;
 }
 
 h2 {
 	margin : 40px auto;
 	font-size : 48px;
-	color: #FFFFFF;
-	text-align: left;
-	font-weight: 400;
+	color : #FFFFFF;
+	font-weight : 400;
 }
 
 h3 {
@@ -89,6 +87,11 @@ a {
     text-decoration : none;
 }
 
+span, #info a, #contact p a {
+	font-weight : normal;
+	cursor : pointer;
+}
+
 .content {
 	margin : 80px auto;
 	width : 1000px;
@@ -99,8 +102,12 @@ a {
 	margin-bottom : 40px;
 }
 
-#info .content, #faq .content {
+#faq .content {
 	width : 720px;
+	text-align : left;
+}
+
+#faq h2 {
 	text-align : left;
 }
 
@@ -109,7 +116,7 @@ a {
 	background-image : url(http://www.transparenttextures.com/patterns/arches.png);
 }
 
-#landing, #info, #join, #faq {
+#landing, #join, #faq {
 	min-height : 100vh;
 }
 
@@ -216,8 +223,12 @@ a {
 	font-family : 'Open Sans', sans-serif; 
 }
 
-#host h3, #host h4, #contact h3, #contact h4 {
+#host h3, #host h4, #contact h3 {
 	margin : 0px;
+}
+
+#contact h4 {
+	margin-top : 8px;
 }
 
 #thanks {
@@ -232,7 +243,7 @@ a {
 
 #contact {
 	background : #434B59;
-	padding : 40px 0px;	
+	padding : 40px 0 20px 0;	
 }
 
 #contact h3 {
@@ -241,6 +252,17 @@ a {
 
 #contact h4 {
 	font-size : 18px;
+}
+
+#contact p {
+	font-family : 'Roboto Slab';
+	font-size : 14px;
+	margin : 12px auto 0 auto !important;
+}
+
+#contact span {
+	font-size : 18px;
+	padding : 0 4px;
 }
 
 #landing button {
@@ -289,10 +311,14 @@ input[type="submit"]:hover {
 }
 
 input[type="text"] {
-	width : 320px;
+/*	width : 320px;*/
+	width : 208px;
 	height : 38px;
-	text-align : center;
+/*	text-align : center;*/
+	padding-left : 112px;
 	float : left;
+	font-size : 18px;
+
 }
 
 form input::-webkit-input-placeholder, form input:-moz-placeholder, form input::-moz-placeholder, form input:-ms-input-placeholder {
